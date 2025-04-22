@@ -1,0 +1,8 @@
+.vscode/
+Test
+*.exe
+*.o
+*.dev
+*.win
+*.layout
+*.out
