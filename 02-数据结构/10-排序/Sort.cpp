@@ -23,6 +23,25 @@ void InsertSort() {
 	}
 }
 
+void ShellSort() {
+	int gap = n / 2;
+	while(gap >= 1) {
+		for(int i=1+gap; i<=n; ++i) {
+			int t = a[i];
+			int j = i - gap;
+			while(j >= 1) {
+				if(a[j] > t) {
+					a[j + gap] = a[j];
+					j -= gap;
+				}
+				else break;
+			}
+			a[j + gap] = t;
+		}
+		gap /= 2;
+	}
+}
+
 void SelectSort() {
 	for(int i=1; i<n; ++i) {
 		int p = i;
@@ -122,6 +141,8 @@ int main() {
 	for(int i=1; i<=n; ++i) cin >> a[i];
 
 	// InsertSort();
+	
+	ShellSort();
 
 	// SelectSort();
 	
@@ -132,7 +153,7 @@ int main() {
 	// srand(time(0));
 	// QuickSort(1, n);
 
-	MergeSort(1, n);
+	// MergeSort(1, n);
 
 	for(int i=1; i<=n; ++i) cout << a[i] << " ";
 	cout << endl;
