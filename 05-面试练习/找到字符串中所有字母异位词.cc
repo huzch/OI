@@ -48,3 +48,29 @@ public:
         return ret;
     }
 };
+
+class Solution {
+    vector<int> ret;
+    int phash[256], shash[256];
+    int pkinds, skinds;
+public:
+    vector<int> findAnagrams(string s, string p) {
+        for(char ch: p) {
+            if(++phash[ch] == 1) ++pkinds;
+        }
+
+        int l = 0, r = 0, n = s.size(), m = p.size();
+        while(r < n) {
+            char in = s[r];
+            if(phash[in] && ++shash[in] == phash[in]) ++skinds;
+            while(skinds == pkinds) {
+                if(r - l + 1 == m) ret.emplace_back(l);
+                char out = s[l];
+                if(phash[out] && shash[out]-- == phash[out]) --skinds;
+                ++l;
+            }
+            ++r;
+        }
+        return ret;
+    }
+};

@@ -2,7 +2,7 @@
 using namespace std;
 
 typedef long long LL;
-//空间优化
+//绌洪棿浼樺寲
 LL a, b, c;
 int n;
 
@@ -28,7 +28,7 @@ int main() {
 //
 //typedef long long LL;
 //const int N = 70;
-////f[i]:抵达第i个台阶，有多少种方案
+////f[i]:鎶佃揪绗琲涓彴闃讹紝鏈夊灏戠鏂规
 //LL f[N];
 //int n;
 //

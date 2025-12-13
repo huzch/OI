@@ -2,7 +2,7 @@
 #include<utility>
 using namespace std;
 
-const int N = 3e6 + 10; //�����ַ����ܳ���
+const int N = 3e6 + 10; //输入字符串总长度
 int tr[N][62], p[N];
 int id;
 
@@ -39,8 +39,8 @@ int main() {
 	int T; cin >> T;
 	
 	while(T--) {
-		//�������
-		//���ڿռ�ﵽ1e8��Ƶ����ջᳬʱ�������ֶ����
+		//清空数据
+		//由于空间达到1e8，频繁清空会超时，所以手动清空
 		for(int i=0; i<=id; ++i) {
 			for(int j=0; j<62; ++j) {
 				tr[i][j] = 0;

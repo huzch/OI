@@ -17,7 +17,7 @@ void bf() {
 	for(int i=1; i<n; ++i) {
 		bool flag = false;
 		for(int u=1; u<=n; ++u) {
-			//ÕýÎÞÇîÔÙ¼ÓÒ»¸öÊý»áÒç³ö£¬±ä³É¸ºÊý£¬ËùÒÔÉáÆú
+			//æ­£æ— ç©·å†åŠ ä¸€ä¸ªæ•°ä¼šæº¢å‡ºï¼Œå˜æˆè´Ÿæ•°ï¼Œæ‰€ä»¥èˆå¼ƒ
 			if(dist[u] == INF) continue;
 			for(auto& kv: edges[u]) {
 				int v = kv.first, w = kv.second;

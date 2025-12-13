@@ -13,7 +13,7 @@ int main() {
 	cin >> n;
 	for(int i=1; i<=n; ++i) cin >> a[i];
 	
-	//×ó±ß¾àÀë×î½üµÄ×î´óÖµ --- µ¥µ÷µÝ¼õÕ»
+	//å·¦è¾¹è·ç¦»æœ€è¿‘çš„æœ€å¤§å€¼ --- å•è°ƒé€’å‡æ ˆ
 	for(int i=n; i>=1; --i) {
 		while(st.size() && a[st.top()] <= a[i]) st.pop();
 		if(st.size()) ret[i] = st.top();

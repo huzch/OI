@@ -1,4 +1,4 @@
-//Ç°×ººÍ+¶ş·Ö²éÕÒ --- O(qlogn)
+//å‰ç¼€å’Œ+äºŒåˆ†æŸ¥æ‰¾ --- O(qlogn)
 #include<iostream>
 using namespace std;
 
@@ -29,7 +29,7 @@ int main() {
 }
 
 
-//Ç°×ººÍ+ÏßĞÔ²éÕÒ --- O(qn)
+//å‰ç¼€å’Œ+çº¿æ€§æŸ¥æ‰¾ --- O(qn)
 //#include<iostream>
 //using namespace std;
 //

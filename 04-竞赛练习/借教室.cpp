@@ -8,7 +8,7 @@ int r[N], d[N], s[N], t[N];
 LL f[N];
 int n, m;
 
-//ÊÇ·ñÂú×ãÍê³É[1,x]¸ö¶©µ¥
+//æ˜¯å¦æ»¡è¶³å®Œæˆ[1,x]ä¸ªè®¢å•
 bool check(int x) {
 	memset(f, 0, sizeof f);
 	for(int i=1; i<=n; ++i) {
@@ -36,7 +36,7 @@ int main() {
 		cin >> d[i] >> s[i] >> t[i];
 	}
 	
-	//¶ş·Ö´ğ°¸+²î·Ö --- O(nlogn)
+	//äºŒåˆ†ç­”æ¡ˆ+å·®åˆ† --- O(nlogn)
 	int left = 1, right = m;
 	while(left < right) {
 		int mid = left + (right - left) / 2;

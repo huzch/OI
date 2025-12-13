@@ -10,7 +10,7 @@ int main() {
 	cin >> n;
 	for(int i=1; i<=n; ++i) cin >> a[i];
 	
-	//必须先排序再去重
+	//蹇呴』鍏堟帓搴忓啀鍘婚噸
 	sort(a + 1, a + n + 1);
 	n = unique(a + 1, a + n + 1) - (a + 1);
 	

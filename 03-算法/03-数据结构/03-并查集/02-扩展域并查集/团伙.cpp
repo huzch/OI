@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N = 1e3 + 10;
-int fa[N * 2]; //��չ�򲢲鼯�����ֹ�ϵ
+int fa[N * 2]; //扩展域并查集，两种关系
 int n, m;
 
 int find(int x) {
@@ -10,14 +10,14 @@ int find(int x) {
 }
 
 void un(int x, int y) {
-	//ע�⸸�ڵ����Ϊ������
+	//注意父节点必须为朋友域
 	fa[find(y)] = find(x);
 }
 
 int main() {
 	cin >> n >> m;
 	
-	//��ʼ�����鼯
+	//初始化并查集
 	for(int i=1; i<=n*2; ++i) fa[i] = i;
 	
 	while(m--) {

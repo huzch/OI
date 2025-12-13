@@ -26,16 +26,16 @@ void dfs(int x, int y) {
 int main() {
 	cin >> n >> m;
 	
-	//�ӷ��Ľǵı߽��������������߽磬������һ���߽�
+	//从非四角的边界点出发，不经过边界，到达另一个边界
 	//ret=(x1+y1+x2+y2)/2=x1+y1
 	
-	//�������
+	//从左出发
 	for(int i=1; i<n; ++i) {
 		st[i][0] = true;
 		dfs(i, 1);
 		st[i][0] = false;
 	}
-	//���ϳ���
+	//从上出发
 	for(int j=1; j<m; ++j) {
 		st[0][j] = true;
 		dfs(1, j);

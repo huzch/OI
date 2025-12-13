@@ -8,7 +8,7 @@ typedef pair<int, int> PII;
 const int N = 1e5 + 10;
 vector<PII> edges[N];
 int dist[N];
-//标记哪些结点已经确定最短路
+//鏍囪鍝簺缁撶偣宸茬粡纭畾鏈�鐭矾
 bool st[N];
 int n, m, s;
 

@@ -10,8 +10,8 @@ int main() {
 	cin >> n >> k;
 	for(int i=1; i<=n; ++i) cin >> a[i];
 	
-	deque<int> q; //´æÏÂ±ê
-	//´°¿ÚÄÚ×îĞ¡Öµ --- µ¥µ÷µİÔö¶ÓÁĞ
+	deque<int> q; //å­˜ä¸‹æ ‡
+	//çª—å£å†…æœ€å°å€¼ --- å•è°ƒé€’å¢é˜Ÿåˆ—
 	for(int i=1; i<=n; ++i) {
 		while(q.size() && a[q.back()] >= a[i]) q.pop_back();
 		q.push_back(i);
@@ -21,7 +21,7 @@ int main() {
 	cout << endl;
 	
 	q.clear();
-	//´°¿ÚÄÚ×î´óÖµ --- µ¥µ÷µİ¼õ¶ÓÁĞ
+	//çª—å£å†…æœ€å¤§å€¼ --- å•è°ƒé€’å‡é˜Ÿåˆ—
 	for(int i=1; i<=n; ++i) {
 		while(q.size() && a[q.back()] <= a[i]) q.pop_back();
 		q.push_back(i);

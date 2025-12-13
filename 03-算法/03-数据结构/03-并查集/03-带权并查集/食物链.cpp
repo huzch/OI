@@ -5,16 +5,16 @@ const int N = 5e4 + 10;
 int fa[N], d[N];
 int n, k;
 
-//d[i]£ºµ±Ç°½áµãiÓë¸¸½áµãfa[i]µÄ¾àÀë
-//d[i]==0£ºiÓëfa[i]ÎªÍ¬Àà
-//d[i]==1£ºi±»fa[i]²¶Ê³
-//d[i]==2£ºi²¶Ê³fa[i]
+//d[i]ï¼šå½“å‰ç»“ç‚¹iä¸Žçˆ¶ç»“ç‚¹fa[i]çš„è·ç¦»
+//d[i]==0ï¼šiä¸Žfa[i]ä¸ºåŒç±»
+//d[i]==1ï¼šiè¢«fa[i]æ•é£Ÿ
+//d[i]==2ï¼šiæ•é£Ÿfa[i]
 
 int find(int x) {
 	if(fa[x] == x) return x;
 	
 	int t = find(fa[x]);
-	d[x] += d[fa[x]]; //Ñ¹ËõÂ·¾¶Ê±¸üÐÂÈ¨Öµ
+	d[x] += d[fa[x]]; //åŽ‹ç¼©è·¯å¾„æ—¶æ›´æ–°æƒå€¼
 	return fa[x] = t;
 }
 
@@ -22,7 +22,7 @@ void un(int x, int y, int w) {
 	int fx = find(x), fy = find(y);
 	if(fx != fy) {
 		fa[fx] = fy;
-		d[fx] = d[y] - d[x] + w; //ºÏ²¢¼¯ºÏÊ±¸üÐÂÈ¨Öµ
+		d[fx] = d[y] - d[x] + w; //åˆå¹¶é›†åˆæ—¶æ›´æ–°æƒå€¼
 	}
 }
 
@@ -35,8 +35,8 @@ int main() {
 	while(k--) {
 		int op, x, y; cin >> op >> x >> y;
 		int fx = find(x), fy = find(y);
-		//¼ÆËãxÓëyÖ®¼äµÄ¾àÀë
-		int t = ((d[y] - d[x]) % 3 + 3) % 3; // 0±íÊ¾x==y£¬1±íÊ¾x->y£¬2±íÊ¾y->x
+		//è®¡ç®—xä¸Žyä¹‹é—´çš„è·ç¦»
+		int t = ((d[y] - d[x]) % 3 + 3) % 3; // 0è¡¨ç¤ºx==yï¼Œ1è¡¨ç¤ºx->yï¼Œ2è¡¨ç¤ºy->x
 		
 		if(x > n || y > n) ++ret;
 		else if(op == 1) { // x==y

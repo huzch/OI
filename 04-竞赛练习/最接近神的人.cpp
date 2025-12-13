@@ -1,4 +1,4 @@
-//½â·¨¶ş£º¹é²¢ÅÅĞò --- ÄæĞò¶Ô
+//è§£æ³•äºŒï¼šå½’å¹¶æ’åº --- é€†åºå¯¹
 #include<iostream>
 using namespace std;
 
@@ -42,7 +42,7 @@ int main() {
 	return 0;
 }
 
-//½â·¨Ò»£ºÃ°ÅİÅÅĞò --- ³¬Ê±
+//è§£æ³•ä¸€ï¼šå†’æ³¡æ’åº --- è¶…æ—¶
 //#include<iostream>
 //using namespace std;
 //

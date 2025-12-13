@@ -3,7 +3,7 @@ using namespace std;
 
 typedef long long LL;
 const int N = 1e3 + 10;
-//¿Õ¼äÓÅ»¯
+//ç©ºé—´ä¼˜åŒ–
 LL f[N];
 int n;
 
@@ -33,7 +33,7 @@ int main() {
 //
 //typedef long long LL;
 //const int N = 1e3 + 10;
-////f[i][j]:µÖ´ï(i, j)Î»ÖÃÊ±£¬ËùµÃµÄ×î´óÈ¨Öµ
+////f[i][j]:æŠµè¾¾(i, j)ä½ç½®æ—¶ï¼Œæ‰€å¾—çš„æœ€å¤§æƒå€¼
 //LL f[N][N];
 //int n;
 //
@@ -42,7 +42,7 @@ int main() {
 //	for(int i=1; i<=n; ++i) {
 //		for(int j=1; j<=i; ++j) {
 //			cin >> f[i][j];
-//          //ÈôÈ¨Öµ´æÔÚ¸ºÊı£¬dp±íÒª³õÊ¼»¯Îª-INF
+//          //è‹¥æƒå€¼å­˜åœ¨è´Ÿæ•°ï¼Œdpè¡¨è¦åˆå§‹åŒ–ä¸º-INF
 //			f[i][j] += max(f[i - 1][j - 1], f[i - 1][j]);
 //		}
 //	}

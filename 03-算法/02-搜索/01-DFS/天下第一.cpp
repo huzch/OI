@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N = 1e4 + 10;
-//ÓÉÓÚÖ»ÓÃ´æ´¢Èı¸ö×´Ì¬£¬ËùÒÔÓÃchar¼´¿ÉÂú×ã1e8µÄ¿Õ¼ä
+//ç”±äºåªç”¨å­˜å‚¨ä¸‰ä¸ªçŠ¶æ€ï¼Œæ‰€ä»¥ç”¨charå³å¯æ»¡è¶³1e8çš„ç©ºé—´
 char f[N][N];
 int T, p;
 
@@ -10,7 +10,7 @@ char dfs(int x, int y) {
 	if(f[x][y] == '3') return '3';
 	if(x == 0) return '1';
 	if(y == 0) return '2';
-	//±íÊ¾¸Ã×´Ì¬ÒÑ·ÃÎÊ
+	//è¡¨ç¤ºè¯¥çŠ¶æ€å·²è®¿é—®
 	f[x][y] = '3';
 	return f[x][y] = dfs((x + y) % p, (x + y + y) % p);
 }

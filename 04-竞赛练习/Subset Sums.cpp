@@ -1,5 +1,5 @@
-//dp --- 01±³°ü
-//f[i][j]:[1,i]ÖÐ£¬×ÜºÍÎªjÊ±£¬ËùÓÐµÄ·½°¸Êý
+//dp --- 01èƒŒåŒ…
+//f[i][j]:[1,i]ä¸­ï¼Œæ€»å’Œä¸ºjæ—¶ï¼Œæ‰€æœ‰çš„æ–¹æ¡ˆæ•°
 #include<iostream>
 using namespace std;
 
@@ -33,7 +33,7 @@ int main() {
 
 
 
-//dfs --- ²¿·Ö³¬Ê±
+//dfs --- éƒ¨åˆ†è¶…æ—¶
 //#include<iostream>
 //using namespace std;
 //

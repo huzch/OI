@@ -16,14 +16,14 @@ void insert(int x1, int y1, int x2, int y2, int k) {
 
 int main() {
 	scanf("%d%d%d", &n, &m, &k);
-	//Ô­¾ØÕóÈ«Îª0×ª»¯Îª²î·Ö¾ØÕóÈ«Îª0
+	//åŸçŸ©é˜µå…¨ä¸º0è½¬åŒ–ä¸ºå·®åˆ†çŸ©é˜µå…¨ä¸º0
 	for(int i=1; i<=m; ++i) {
 		int x, y, z;
 		scanf("%d%d%d", &x, &y, &z);
 		insert(x, y, x, y, z);
 	}
 	
-	//Ã¶¾Ù×Ó¾ØÕóµÄ×óÉÏ½Ç×ø±ê
+	//æšä¸¾å­çŸ©é˜µçš„å·¦ä¸Šè§’åæ ‡
 	LL ret = 0;
 	for(int x1=1; x1<=n-k+1; ++x1) {
 		for(int y1=1; y1<=n-k+1; ++y1) {
@@ -33,7 +33,7 @@ int main() {
 		}
 	}
 	
-	//ÅĞ¶ÏÊÇ·ñÎŞ½â
+	//åˆ¤æ–­æ˜¯å¦æ— è§£
 	for(int i=1; i<=n; ++i) {
 		for(int j=1; j<=n; ++j) {
 			if(f[i][j]) {

@@ -11,7 +11,7 @@ int main() {
 	for(int i=1; i<=n; ++i) cin >> a[i];
 	
 	deque<int> q;
-	//´°¿ÚÄÚ×îĞ¡Öµ --- µ¥µ÷µİÔö¶ÓÁĞ
+	//çª—å£å†…æœ€å°å€¼ --- å•è°ƒé€’å¢é˜Ÿåˆ—
 	for(int i=1; i<=n; ++i) {
 		while(q.size() && a[q.back()] >= a[i]) q.pop_back();
 		q.push_back(i);

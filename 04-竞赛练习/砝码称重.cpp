@@ -3,7 +3,7 @@ using namespace std;
 
 const int N = 10;
 const int M = 1e3 + 10;
-//f[i][j]:前i个砝码中，能否组成总重为j
+//f[i][j]:鍓峣涓牆鐮佷腑锛岃兘鍚︾粍鎴愭�婚噸涓簀
 bool f[M];
 int w[] = {0 ,1, 2, 3, 5, 10, 20};
 int a[N];

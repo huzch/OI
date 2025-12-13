@@ -11,7 +11,7 @@ void dfs(int pos, int begin) {
 	}
 	
 	for(int i=begin; i<=n; ++i) {
-  		//¿ÉÐÐÐÔ¼ôÖ¦£¨ÔÚÎ´½øÈëÖ®Ç°¼ôÖ¦£©
+  		//å¯è¡Œæ€§å‰ªæžï¼ˆåœ¨æœªè¿›å…¥ä¹‹å‰å‰ªæžï¼‰
 		if(sum + (k - pos) * i > n) return;
 		sum += i;
 		dfs(pos + 1, i);

@@ -8,7 +8,7 @@ int n, r, q;
 
 struct node {
 	int s, id;
-}a[N], b[N], c[N]; //b为胜利组，c为失败组
+}a[N], b[N], c[N]; //b涓鸿儨鍒╃粍锛宑涓哄け璐ョ粍
 
 int main() {
 	cin >> n >> r >> q;
@@ -22,7 +22,7 @@ int main() {
 	});
 
 	while(r--) {
-		//将比赛结果分为胜利组和失败组，每组满足单调递减
+		//灏嗘瘮璧涚粨鏋滃垎涓鸿儨鍒╃粍鍜屽け璐ョ粍锛屾瘡缁勬弧瓒冲崟璋冮�掑噺
 		int pos = 1;
 		for(int i=1; i<=n+n; i+=2) {
 			int id1 = a[i].id, id2 = a[i + 1].id;
@@ -39,7 +39,7 @@ int main() {
 			++pos;
 		}
 		
-		//合并两个有序数组
+		//鍚堝苟涓や釜鏈夊簭鏁扮粍
 		int cur1 = 1, cur2 = 1, k = 1;
 		while(cur1 <= n && cur2 <= n) {
 			int s1 = b[cur1].s, s2 = c[cur2].s;
@@ -63,7 +63,7 @@ int main() {
 
 
 
-//模拟 --- 超时
+//妯℃嫙 --- 瓒呮椂
 //#include<iostream>
 //#include<algorithm>
 //using namespace std;

@@ -27,7 +27,7 @@ void bfs() {
 	while(q.size()) {
 		auto t = q.front(); q.pop_front();
 		int i = t.x, j = t.y;
-		//ע�⣺01bfsҪ�ڳ�����ʱ��֦������������ͨbfs�����ʱ��֦
+		//注意：01bfs要在出队列时剪枝，而不是像普通bfs在入队时剪枝
 		if(i == x2 && j == y2) return;
 
 		for(int k=0; k<4; ++k) {
@@ -41,7 +41,7 @@ void bfs() {
 
 					dist[x][y] = dist[i][j] + w;
 				}
-				else if(dist[i][j] + w < dist[x][y]) { //�ڶ����������ɳڲ���
+				else if(dist[i][j] + w < dist[x][y]) { //第二次遇到，松弛操作
 					dist[x][y] = dist[i][j] + w;
 				}
 			}

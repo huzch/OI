@@ -9,7 +9,7 @@ const int INF = INT_MAX;
 const int N = 1e4 + 10;
 vector<PII> edges[N];
 int dist[N];
-//标记哪些结点在队列中
+//鏍囪鍝簺缁撶偣鍦ㄩ槦鍒椾腑
 bool st[N];
 int n, m, s;
 

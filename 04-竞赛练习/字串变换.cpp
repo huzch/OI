@@ -1,4 +1,4 @@
-// bfs --- 单源最短路
+// bfs --- 鍗曟簮鏈�鐭矾
 #include<iostream>
 #include<queue>
 #include<unordered_map>
@@ -50,7 +50,7 @@ int main() {
 
 
 
-// dfs --- 有几个样例WA
+// dfs --- 鏈夊嚑涓牱渚媁A
 //#include<iostream>
 //#include<unordered_map>
 //using namespace std;

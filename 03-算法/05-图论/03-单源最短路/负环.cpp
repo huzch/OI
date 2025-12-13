@@ -9,7 +9,7 @@ const int N = 2e3 + 10;
 vector<PII> edges[N];
 int dist[N];
 bool st[N];
-int cnt[N]; //±íÊ¾Ô´µãµ½µ±Ç°½áµãµÄ²½Êı
+int cnt[N]; //è¡¨ç¤ºæºç‚¹åˆ°å½“å‰ç»“ç‚¹çš„æ­¥æ•°
 int n, m;
 
 bool spfa() {
@@ -48,7 +48,7 @@ int main() {
 	int T; cin >> T;
 	while(T--) {
 		cin >> n >> m;
-		//¶à×é²âÊÔÓÃÀıÇå¿Õ
+		//å¤šç»„æµ‹è¯•ç”¨ä¾‹æ¸…ç©º
 		for(int i=1; i<=n; ++i) edges[i].clear();
 		
 		for(int i=1; i<=m; ++i) {
@@ -78,7 +78,7 @@ int main() {
 //struct node {
 //	int u, v, w;
 //}e[M * 2];
-//int pos; //¼ÇÂ¼±ßÊı
+//int pos; //è®°å½•è¾¹æ•°
 //int dist[N];
 //int n, m;
 //
@@ -87,7 +87,7 @@ int main() {
 //	dist[1] = 0;
 //	
 //	bool flag = false;
-//	//¶à½øĞĞÒ»ÂÖËÉ³Ú£¬ÒÔÅĞ¶Ï¸º»·
+//	//å¤šè¿›è¡Œä¸€è½®æ¾å¼›ï¼Œä»¥åˆ¤æ–­è´Ÿç¯
 //	for(int i=1; i<=n; ++i) {
 //		flag = false;
 //		for(int j=1; j<=pos; ++j) {
@@ -107,7 +107,7 @@ int main() {
 //int main() {
 //	int T; cin >> T;
 //	while(T--) {
-//		pos = 0; //¶à×é²âÊÔÓÃÀıÇå¿Õ
+//		pos = 0; //å¤šç»„æµ‹è¯•ç”¨ä¾‹æ¸…ç©º
 //		cin >> n >> m;
 //		for(int i=1; i<=m; ++i) {
 //			int u, v, w; cin >> u >> v >> w;

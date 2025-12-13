@@ -27,7 +27,7 @@ int find(string& s) {
 		cur = tr[cur][path];
 	}
 	
-	return e[cur]++; //ÕÒµ½Ò»´Î¼ÓÒ»´Î
+	return e[cur]++; //æ‰¾åˆ°ä¸€æ¬¡åŠ ä¸€æ¬¡
 }
 
 int main() {

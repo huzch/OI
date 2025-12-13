@@ -9,7 +9,7 @@ int n, m, c;
 
 int main() {
 	cin >> n >> m >> c;
-	//´´½¨Ç°×ººÍ¾ØÕó
+	//åˆ›å»ºå‰ç¼€å’ŒçŸ©é˜µ
 	for(int i=1; i<=n; ++i) {
 		for(int j=1; j<=n; ++j) {
 			cin >> f[i][j];
@@ -17,7 +17,7 @@ int main() {
 		}
 	}
 	
-	//Ã¶¾ÙÓÒÏÂ½Ç×ø±ê
+	//æšä¸¾å³ä¸‹è§’åæ ‡
 	int x = -1, y = -1;
 	LL ret = -INF;
 	for(int x2=c; x2<=n; ++x2) {

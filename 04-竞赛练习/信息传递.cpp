@@ -21,7 +21,7 @@ int main() {
 		++in[ne[i]];
 	}
 	
-	//利用拓扑排序标记非环结点
+	//鍒╃敤鎷撴墤鎺掑簭鏍囪闈炵幆缁撶偣
 	queue<int> q;
 	for(int i=1; i<=n; ++i) {
 		if(in[i] == 0) q.push(i);
@@ -35,7 +35,7 @@ int main() {
 		if(in[b] == 0) q.push(b);
 	}
 	
-	//利用dfs在众多环中选取最小的
+	//鍒╃敤dfs鍦ㄤ紬澶氱幆涓�夊彇鏈�灏忕殑
 	int ret = n;
 	for(int i=1; i<=n; ++i) {
 		if(!st[i]) {

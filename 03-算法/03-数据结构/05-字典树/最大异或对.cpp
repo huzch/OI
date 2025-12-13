@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N = 4e6 + 10;
-int tr[N][2], e[N]; //01×ÖµäÊ÷
+int tr[N][2], e[N]; //01å­—å…¸æ ‘
 int id;
 
 int a[N];
@@ -17,7 +17,7 @@ void insert(int x) {
 		cur = tr[cur][path];
 	}
 	
-	e[cur] = x; //ÕâÀïendÖ±½Ó´æ´¢Êı£¬·½±ãºóĞøÒì»ò
+	e[cur] = x; //è¿™é‡Œendç›´æ¥å­˜å‚¨æ•°ï¼Œæ–¹ä¾¿åç»­å¼‚æˆ–
 }
 
 int find(int x) {
@@ -25,7 +25,7 @@ int find(int x) {
 	
 	for(int i=31; i>=0; --i) {
 		int path = ((x >> i) & 1) ^ 1;
-		if(tr[cur][path] == 0) path ^= 1; //Ì°ĞÄ£¬ÍË¶øÇóÆä´Î
+		if(tr[cur][path] == 0) path ^= 1; //è´ªå¿ƒï¼Œé€€è€Œæ±‚å…¶æ¬¡
 		cur = tr[cur][path];
 	}
 	
@@ -35,7 +35,7 @@ int find(int x) {
 int main() {
 	cin >> n;
 	for(int i=1; i<=n; ++i) {
-		cin >> a[i]; //²âÊÔÊı¾İ¶¼ÊÇÕıÊı£¬²»¿¼ÂÇ¸ºÊı
+		cin >> a[i]; //æµ‹è¯•æ•°æ®éƒ½æ˜¯æ­£æ•°ï¼Œä¸è€ƒè™‘è´Ÿæ•°
 		insert(a[i]);
 	}
 	

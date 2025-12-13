@@ -2,7 +2,7 @@
 using namespace std;
 
 const int N = 5e4 + 10;
-int fa[N * 3]; //Í¬Àà£¬²¶Ê³£¬±»²¶Ê³ÈıÖÖ¹ØÏµ
+int fa[N * 3]; //åŒç±»ï¼Œæ•é£Ÿï¼Œè¢«æ•é£Ÿä¸‰ç§å…³ç³»
 int n, k;
 
 int find(int x) {
