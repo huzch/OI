@@ -1,5 +1,5 @@
 // 方法一：堆(优先级队列)
-// time: O(nlogn), space: O(k)
+// time: O(nlogk), space: O(k)
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
@@ -16,7 +16,7 @@ public:
 };
 
 // 方法二：堆(手动实现)
-// time: O(nlogn), space: O(k)
+// time: O(nlogk), space: O(k)
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
