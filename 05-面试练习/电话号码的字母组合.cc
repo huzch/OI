@@ -1,27 +1,26 @@
+// 方法：dfs（回溯：枚举选哪个）
 class Solution {
-    unordered_map<char, string> hash = {{'2', "abc"}, {'3', "def"}, {'4', "ghi"},
-                                       {'5', "jkl"}, {'6', "mno"}, {'7', "pqrs"},
-                                       {'8', "tuv"}, {'9', "wxyz"}};
-    vector<string> ret;
-    string path;
-
 public:
     vector<string> letterCombinations(string digits) {
-        dfs(digits, 0);
+        int n = digits.size();
+        vector<string> ret;
+        string path;
+        vector<string> ht = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+        auto dfs = [&](this auto&& dfs, int i) {
+            if(i == n) {
+                ret.push_back(path);
+                return;
+            }
+
+            int j = digits[i] - '0';
+            for(char ch: ht[j]) {
+                path.push_back(ch);
+                dfs(i + 1);
+                path.pop_back();
+            }
+        };
+        dfs(0);
         return ret;
-    }
-
-    void dfs(string& digits, int pos) {
-        if (path.size() == digits.size()) {
-            ret.emplace_back(path);
-            return;
-        }
-
-        auto& s = hash[digits[pos]];
-        for (char ch: s) {
-            path += ch;
-            dfs(digits, pos + 1);
-            path.pop_back();
-        }
     }
 };
